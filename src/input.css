@@ -1,0 +1,219 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@import "tailwindcss";
+
+:root {
+    --font-primary: "Playfair Display";
+    --font-secondary: "Inter";
+
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1170px;
+    --breakpoint-xxl: 1300px;
+
+    --color-primary: #030605;
+    --color-primary-hover: #202624;
+    --color-accent-1: #ffd476;
+    --color-accent-2: #28887a;
+    --color-accent-2-hover: #24767a;
+    --color-page: #f8fbfa;
+}
+
+body {
+    font-family: var(--font-secondary), sans-serif;
+    color: var(--color-primary);
+}
+
+a {
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+a:hover {
+    background-color: var(--color-accent-2);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 1170px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    font-family: var(--font-primary), serif;
+}
+
+/*  1 rem is equal to 16 pixels by default "root em"
+
+      text-lg = 1.125 rem
+      text-xl = 1.25 rem
+
+      text-2xl = 1.5 rem
+      text-3xl = 1.875 rem
+      text-4xl = 2.25 rem
+
+      text-5xl = 3 rem
+      text-6xl = 3.75 rem
+      text-7xl = 4.5 rem
+
+      text-8xl = 6 rem
+      text-9xl = 8 rem
+    
+*/
+
+/* h1 tag */
+.h1 {
+    font-size: 3rem; /* text-5xl  or font-size: 48px */
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .h1 {
+        font-size: 3.75rem; /* md:text-6xl */
+    }
+}
+
+@media (min-width: 1170px) {
+    .h1 {
+        font-size: 6rem; /* xl:text-8xl */
+    }
+}
+/* h1 tag */
+
+
+/* h2 tag */
+.h2 {
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 1.25;  /* leading-tight */
+    margin-bottom: 3rem; /* mb-12 */
+}
+
+@media (min-width: 768px) {
+    .h2 {
+        font-size: 3rem; /* md:text-5xl */
+    }
+}
+
+@media (min-width: 1170px) {
+    .h2 {
+        font-size: 3.75rem; /* xl:text-6xl */
+        margin-bottom: 90px; /* xl:mb-[90px] */
+    }
+}
+/* h2 tag */
+
+
+/* h3 tag */
+.h3 {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+    .h3 {
+        font-size: 2.25rem; /* md:text-4xl */
+        line-height: 2.5rem;
+    }
+}
+
+@media (min-width: 1170px) {
+    .h3 {
+        font-size: 3rem; /* xl:text-5xl */
+        line-height: 1;
+    }
+}
+/* h3 tag */
+
+
+/* h4 tag */
+.h4 {
+    font-size: 1.5rem; /* text-2xl */
+}
+@media (min-width: 768px) {
+    .h4 {
+        font-size: 1.875rem; /* md:text-3xl */
+    }
+}
+@media (min-width: 1280px) {
+    .h4 {
+        font-size: 2.25rem; /* xl:text-4xl */
+    }
+}
+/* h4 tag */
+
+
+/* h5 tag */
+.h5 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 500;    /* font-medium */
+}
+@media (min-width: 768px) {
+    .h5 {
+        font-size: 1.5rem; /* md:text-2xl */
+    }
+}      
+/* h5 tag */
+
+
+/* h6 tag */
+.h6 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500;    /* font-medium */
+}
+@media (min-width: 768px) {
+    .h6 {
+        font-size: 1.25rem; /* md:text-xl */
+    }
+}
+/* h6 tag */
+
+
+/* button */
+.btn {
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-sm {
+    height: 52px;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+    /* px = 6 */
+}
+
+.btn-lg {
+    min-width: 172px;
+    height: 60px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* px = 8 */
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-2);
+}
+
+.btn-accent-2 {
+    background-color: var(--color-accent-2);
+    transition: all 0.3s;
+}
+
+.btn-accent-2:hover {
+    background-color: var(--color-accent-2-hover);
+}
+/* button */
