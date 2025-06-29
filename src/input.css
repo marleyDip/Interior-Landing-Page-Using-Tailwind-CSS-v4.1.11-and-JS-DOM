@@ -1,10 +1,9 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 @import "tailwindcss";
 
-:root {
+@theme {
     --font-primary: "Playfair Display";
     --font-secondary: "Inter";
 
@@ -12,7 +11,8 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 1024px;
     --breakpoint-xl: 1170px;
-    --breakpoint-xxl: 1300px;
+    --breakpoint-2xl: 1300px;
+
 
     --color-primary: #030605;
     --color-primary-hover: #202624;
@@ -23,34 +23,24 @@
 }
 
 body {
-    font-family: var(--font-secondary), sans-serif;
-    color: var(--color-primary);
+    @apply font-secondary text-primary;
 }
 
 a {
-    font-weight: 500;
-    transition: all 0.3s;
-}
-
-a:hover {
-    background-color: var(--color-accent-2);
+    @apply font-medium hover:text-accent-2 transition-all duration-300
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    @apply px-[15px] xl:px-0;
 }
 
-@media (min-width: 1170px) {
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 600;
-    font-family: var(--font-primary), serif;
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5, 
+.h6 {
+    @apply font-semibold font-primary;
 }
 
 /*  1 rem is equal to 16 pixels by default "root em"
@@ -71,149 +61,47 @@ a:hover {
     
 */
 
-/* h1 tag */
 .h1 {
-    font-size: 3rem; /* text-5xl  or font-size: 48px */
-    line-height: 1;
+    @apply text-5xl md:text-6xl xl:text-8xl;
 }
 
-@media (min-width: 768px) {
-    .h1 {
-        font-size: 3.75rem; /* md:text-6xl */
-    }
-}
-
-@media (min-width: 1170px) {
-    .h1 {
-        font-size: 6rem; /* xl:text-8xl */
-    }
-}
-/* h1 tag */
-
-
-/* h2 tag */
 .h2 {
-    font-size: 2.25rem; /* text-4xl */
-    line-height: 1.25;  /* leading-tight */
-    margin-bottom: 3rem; /* mb-12 */
+    @apply text-4xl md:text-5xl xl:text-6xl leading-tight mb-12 xl:mb-[90px];
 }
 
-@media (min-width: 768px) {
-    .h2 {
-        font-size: 3rem; /* md:text-5xl */
-    }
-}
-
-@media (min-width: 1170px) {
-    .h2 {
-        font-size: 3.75rem; /* xl:text-6xl */
-        margin-bottom: 90px; /* xl:mb-[90px] */
-    }
-}
-/* h2 tag */
-
-
-/* h3 tag */
 .h3 {
-    font-size: 1.875rem; /* text-3xl */
-    line-height: 2.25rem;
+    @apply text-3xl md:text-4xl xl:text-5xl;
 }
 
-@media (min-width: 768px) {
-    .h3 {
-        font-size: 2.25rem; /* md:text-4xl */
-        line-height: 2.5rem;
-    }
-}
-
-@media (min-width: 1170px) {
-    .h3 {
-        font-size: 3rem; /* xl:text-5xl */
-        line-height: 1;
-    }
-}
-/* h3 tag */
-
-
-/* h4 tag */
 .h4 {
-    font-size: 1.5rem; /* text-2xl */
+    @apply text-2xl md:text-3xl xl:text-4xl;
 }
-@media (min-width: 768px) {
-    .h4 {
-        font-size: 1.875rem; /* md:text-3xl */
-    }
-}
-@media (min-width: 1280px) {
-    .h4 {
-        font-size: 2.25rem; /* xl:text-4xl */
-    }
-}
-/* h4 tag */
 
-
-/* h5 tag */
 .h5 {
-    font-size: 1.25rem; /* text-xl */
-    font-weight: 500;    /* font-medium */
+    @apply text-xl md:text-2xl font-medium;
 }
-@media (min-width: 768px) {
-    .h5 {
-        font-size: 1.5rem; /* md:text-2xl */
-    }
-}      
-/* h5 tag */
 
-
-/* h6 tag */
 .h6 {
-    font-size: 1.125rem; /* text-lg */
-    font-weight: 500;    /* font-medium */
+    @apply text-lg md:text-xl font-medium;
 }
-@media (min-width: 768px) {
-    .h6 {
-        font-size: 1.25rem; /* md:text-xl */
-    }
-}
-/* h6 tag */
 
-
-/* button */
 .btn {
-    color: #fff;
-    cursor: pointer;
+    @apply text-white cursor-pointer;
 }
 
 .btn-sm {
-    height: 52px;
-    padding-left: 1.5rem; 
-    padding-right: 1.5rem;
-    /* px = 6 */
+    @apply h-[52px] px-6;
 }
 
 .btn-lg {
-    min-width: 172px;
-    height: 60px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    /* px = 8 */
+    @apply min-w-[172px] h-[60px] px-8;   
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    transition: all 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: var(--color-accent-2);
+    @apply bg-primary hover:bg-accent-2 transition-all duration-300;
 }
 
 .btn-accent-2 {
-    background-color: var(--color-accent-2);
-    transition: all 0.3s;
+    @apply bg-accent-2 hover:bg-accent-2-hover transition-all duration-300
 }
 
-.btn-accent-2:hover {
-    background-color: var(--color-accent-2-hover);
-}
-/* button */
