@@ -32,6 +32,95 @@
   </head>
 
   <body class="bg-accent-2/20">
-    <h2>hello</h2>
+    <!-- site wrapper start -->
+    <div class="w-full max-w-[1440px] mx-auto bg-page">
+      <!-- header start -->
+      <header class="py-10 px-4">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <!-- logo start -->
+            <a href="">
+              <img src="assets/logo.svg" alt="" />
+            </a>
+            <!-- logo end -->
+
+            <!-- nav desktop start -->
+            <nav class="hidden xl:flex gap-12">
+              <a href="">Home</a>
+
+              <a href="">About</a>
+
+              <a href="">Services</a>
+
+              <a href="">Projects</a>
+
+              <a href="">Feedback</a>
+            </nav>
+            <!-- nav desktop end -->
+
+            <!-- btn & nav mobile trigger start -->
+            <div>
+              <!-- btn start -->
+              <button class="hidden xl:block btn btn-sm btn-accent-2">
+                Contact US
+              </button>
+              <!-- btn end -->
+
+              <!-- nav mobile trigger icon start -->
+              <button class="cursor-pointer xl:hidden" id="nav-trigger">
+                <i class="ri-menu-4-fill text-3xl"></i>
+              </button>
+              <!-- nav mobile trigger icon end -->
+
+              <!-- nav mobile start -->
+              <nav
+                class="fixed top-0 right-0 bottom-0 h-full z-50 w-[300px] bg-white shadow-2xl xl:hidden transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col items-center justify-center gap-24 pt-12"
+                id="nav-mobile"
+              >
+                <!-- logo start -->
+                <a href="">
+                  <img src="assets/logo.svg" alt="" />
+                </a>
+                <!-- logo end -->
+
+                <!-- menu start -->
+                <ul class="w-full flex flex-col items-center gap-12">
+                  <!-- nav mobile close start -->
+                  <li
+                    class="absolute left-6 top-6 w-8 h-8 bg-accent-2 rounded-full flex items-center justify-center text-xl text-white cursor-pointer"
+                    id="nav-close"
+                  >
+                    <i class="ri-close-line"></i>
+                  </li>
+                  <!-- nav mobile close end -->
+
+                  <li><a href="">Home</a></li>
+
+                  <li><a href="">About</a></li>
+
+                  <li><a href="">Services</a></li>
+
+                  <li><a href="">Projects</a></li>
+
+                  <li><a href="">Feedback</a></li>
+                </ul>
+                <!-- menu end -->
+
+                <!-- Contact btn start -->
+                <button class="btn btn-sm btn-accent-2">Contact Us</button>
+                <!-- Contact btn end -->
+              </nav>
+              <!-- nav mobile end -->
+            </div>
+            <!-- btn & nav mobile trigger end -->
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- temp div -->
+      <div class="h-[3000px]"></div>
+      <!-- temp div -->
+    </div>
   </body>
 </html>
