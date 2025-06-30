@@ -16,6 +16,9 @@ navTrigger.addEventListener("click", toggleMenu);
 
 navClose.addEventListener("click", toggleMenu);
 
+// year
+document.getElementById("year").textContent = new Date().getFullYear();
+
 // swiper
 const swiper = new Swiper(".mySwiper", {
   navigation: {
