@@ -105,3 +105,15 @@ a {
     @apply bg-accent-2 hover:bg-accent-2-hover transition-all duration-300
 }
 
+/* swiper */
+.swiper-button-prev:after {
+    @apply text-primary
+}
+
+.swiper-button-next:after {
+    @apply text-primary
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    @apply bg-accent-2
+}
