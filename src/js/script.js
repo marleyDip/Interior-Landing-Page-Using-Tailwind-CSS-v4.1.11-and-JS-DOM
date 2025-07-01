@@ -113,6 +113,14 @@ sr.reveal(".services-secondary__img2", {
   delay: 700,
 });
 
+sr.reveal(".services-secondary__mobile", {
+  delay: 600,
+});
+
+sr.reveal(".services-secondary__mobileTextBtn", {
+  delay: 700,
+});
+
 // service-tertiary animation
 sr.reveal(".services-tertiary__title", {
   delay: 500,
@@ -156,9 +164,9 @@ sr.reveal(".footer__container", {
 
 sr.reveal(".footer__copyright", {
   origin: "top",
-  delay: 300,
+  delay: 100,
 });
 
 sr.reveal(".footer-copyright__title", {
-  delay: 400,
+  delay: 200,
 });
