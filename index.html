@@ -119,7 +119,9 @@
       <!-- header end -->
 
       <!-- hero start -->
-      <section class="relative py-24 xl:py-0 xl:h-[800px] flex items-center">
+      <section
+        class="hero relative py-24 xl:py-0 xl:h-[800px] flex items-center"
+      >
         <div
           class="bg-accent-1 w-full xl:w-3/4 h-full absolute z-10 top-0 left-0 xl:rounded-tr-[500px]"
         ></div>
@@ -153,7 +155,7 @@
                 <!-- feature image end -->
 
                 <!-- cta btn start -->
-                <div>
+                <div class="hero__btn">
                   <button
                     class="btn btn-lg bg-accent-2 flex items-center gap-3 !px-6"
                   >
@@ -202,7 +204,7 @@
         <div class="container mx-auto xl:border-x border-primary/30 h-full">
           <!-- featured image 1 start -->
           <div
-            class="about__featureImg w-[270px] h-[418px] rounded-b-full hidden xl:flex absolute left-[32%]"
+            class="about__featuredImg w-[270px] h-[418px] rounded-b-full hidden xl:flex absolute left-[32%]"
           >
             <img src="assets/about/img1.png" alt="About Top Image" />
           </div>
@@ -358,7 +360,7 @@
             </div>
             <!-- items 3 end -->
           </div>
-          <!-- items start -->
+          <!-- items end -->
         </div>
       </section>
       <!-- service end -->
@@ -382,14 +384,16 @@
         <!-- show on desktop image start -->
         <div class="hidden xl:flex absolute left-0 w-full top-[480px]">
           <!-- top left image start -->
-          <div class="w-full max-w-[640px] absolute -top-[120px] left-0">
+          <div
+            class="services-secondary__img1 w-full max-w-[640px] absolute -top-[120px] left-0"
+          >
             <img src="assets/services/1.jpg" alt="Service Top Left Image" />
           </div>
           <!-- top left image end -->
 
           <!-- top right image & bottom text start -->
           <div
-            class="w-[1035px] h-[899px] bg-page border-t border-primary/30 absolute top-0 right-0 pl-[30px] pt-[30px]"
+            class="services-secondary__img2 w-[1035px] h-[899px] bg-page border-t border-primary/30 absolute top-0 right-0 pl-[30px] pt-[30px]"
           >
             <!-- top right image start -->
             <div
@@ -502,7 +506,9 @@
       <!-- project start -->
       <section class="projects">
         <div class="container mx-auto xl:border-x border-primary/30">
-          <h2 class="h2 text-center xl:text-right pt-24 pb-[90px] !mb-0">
+          <h2
+            class="projects__title h2 text-center xl:text-right pt-24 pb-[90px] !mb-0"
+          >
             Amazing Projects from <br />
             Talented Interior Architects!
           </h2>
@@ -625,7 +631,9 @@
           <div
             class="testimonial__title flex items-center justify-between xl:mb-12"
           >
-            <h2 class="h2 text-center xl:text-left mx-auto xl:mx-0 !mb-0">
+            <h2
+              class="testimonials__title h2 text-center xl:text-left mx-auto xl:mx-0 !mb-0"
+            >
               Our Customer <br />
               Feedback.
             </h2>
@@ -726,7 +734,7 @@
             class="bg-accent-1 py-24 absolute left-0 right-0 xl:rounded-br-[370px]"
           >
             <!-- text & image start -->
-            <div class="container mx-auto">
+            <div class="contact__textImgContainer container mx-auto">
               <div
                 class="flex flex-col xl:flex-row items-center justify-between w-full"
               >
@@ -872,9 +880,9 @@
         </div>
 
         <!-- copyright text start -->
-        <div class="border-t border-primary/30">
+        <div class="footer__copyright border-t border-primary/30">
           <div class="container mx-auto py-10 text-sm text-center">
-            <p>
+            <p class="footer-copyright__title">
               &copy; copyright <span id="year"></span>
               <a
                 href="https://marleydip.netlify.app/"
