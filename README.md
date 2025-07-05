@@ -1,12 +1,12 @@
 ## 🚀 *Project Demo Link*
 
-### 🔗 [Interior Landing Page Using Tailwind CSS v4 & JS](https://tailwind-v4-interior.netlify.app/)
+### 🔗 [Interior Landing Page Using Tailwind CSS v4 & JS DOM](https://tailwind-v4-interior.netlify.app/)
 
 ## 🌟 *Project Description*
 
 🎯 **Live Site**: [Interior Landing Page](https://tailwind-v4-interior.netlify.app/)
 
-💻 Built with **Tailwind CSS v4.1.11** & **JavaScript**
+💻 Built with **Tailwind CSS v4.1.11** & **JavaScript DOM**
 
 📱 Fully **responsive** & **performance optimized** 
 
